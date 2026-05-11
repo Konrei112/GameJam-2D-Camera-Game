@@ -34,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (moveInput != Vector2.zero)
         {
+            TurnCheck(moveInput); 
+
             Vector2 targetVelocity = Vector2.zero;
             if (InputManager.RunIsHeld)
             {
@@ -52,7 +54,32 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void TurnCheck(Vector2 moveInput)
+    {
+        if (_IsFacingRight && moveInput.x < 0)
+        {
+            Turn(false);
+        }
+        else if (_IsFacingRight && moveInput.x < 0)
+        {
+            Turn(false);
+        }
+    }
 
+    private void Turn(bool turnRight)
+    {
+        if (turnRight)
+        {
+            _IsFacingRight = true;
+            transform.Rotate(0f, 180f, 0f);
+        }
+        else
+        {
+            _IsFacingRight = false;
+            transform.Rotate(0f, -180f, 0f);
+        }
+    }
+
+    #endregion
 }
 
 
