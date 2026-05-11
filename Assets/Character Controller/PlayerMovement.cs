@@ -57,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Debug.Log("Is Facing Right"+_IsFacingRight);
         CollisionChecks();
         Jump();
         Debug.Log(_isGrounded);
@@ -97,12 +98,13 @@ public class PlayerMovement : MonoBehaviour
             _rb.linearVelocity = new Vector2(_moveVelocity.x, _rb.linearVelocity.y);// Problem
         }
     }
+    //Fine Tune Later
 
     private void TurnCheck(Vector2 moveInput)
     {
-        if (_IsFacingRight && moveInput.x < 0)
+        if (_IsFacingRight && moveInput.x > 0)
         {
-            Turn(false);
+            Turn(true);
         }
         else if (_IsFacingRight && moveInput.x < 0)
         {
@@ -407,6 +409,16 @@ public class PlayerMovement : MonoBehaviour
         else { _coyoteTimer = MoveStats.JumpCoyoteTime; }
 
     }
+
+    #endregion
+
+
+    #region Camera
+
+
+
+
+
 
     #endregion
 }

@@ -34,12 +34,12 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "EnableCameraMode",
+                    "name": "EnableCam",
                     "type": "Button",
                     "id": "7bb133d6-79d0-4226-89da-be1369135490",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Press",
                     "initialStateCheck": false
                 }
             ],
@@ -128,7 +128,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "EnableCameraMode",
+                    "action": "EnableCam",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
