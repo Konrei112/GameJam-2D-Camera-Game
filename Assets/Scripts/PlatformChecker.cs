@@ -15,9 +15,15 @@ public class PlatformChecker : MonoBehaviour
     bool visible2 = false;
     bool visible3 = false;
 
+    private void Update()
+    {
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        object1.SetActive(false);
+        object2.SetActive(false);
+        object3.SetActive(false);
         if (collision.CompareTag("Lens1"))
         {
             object1.SetActive(true);
@@ -42,21 +48,42 @@ public class PlatformChecker : MonoBehaviour
             object1.SetActive(false);
             visible1 = false;
         }
-        if (collision.CompareTag("Lens2") && !shotTaken2)
+        if (collision.CompareTag("Lens2"))
         {
-            object2.SetActive(false);
+            if (!shotTaken2)
+                object2.SetActive(false);
+
             visible2 = false;
         }
-        if (collision.CompareTag("Lens3") && !shotTaken3)
+        if (collision.CompareTag("Lens3"))
         {
-            object3.SetActive(false);
+            if (!shotTaken3)
+                object3.SetActive(false);
+
             visible3 = false;
         }
     }
 
     public void Snap()
     {
-        shotTaken1 = true;
+        if (visible1 && !shotTaken1)
+        {
+            shotTaken1 = true;
+            Debug.Log("Lens1 snapped");
+        }
+
+        if (visible2 && !shotTaken2)
+        {
+            shotTaken2 = true;
+            Debug.Log("Lens2 snapped");
+        }
+
+        if (visible3 && !shotTaken3)
+        {
+            shotTaken3 = true;
+            Debug.Log("Lens3 snapped");
+        }
     }
+
 
 }
