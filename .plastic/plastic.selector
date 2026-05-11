@@ -1,0 +1,4 @@
+repository "GameJam 2D Camera/GameJam 2D Camera@20066721788290@cloud"
+  path "/"
+    br "/main"
+    co "/main"
