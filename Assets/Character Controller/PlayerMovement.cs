@@ -18,6 +18,27 @@ public class PlayerMovement : MonoBehaviour
     private bool _isGrounded;
     private bool _bumpedHead;
 
+    //jump vars
+    public float VerticalVelocity { get; private set; }
+    private bool _isJumping;
+    private bool _isFastFalling;
+    private bool _isFalling;
+    private float _fastFallTime;
+    private float _fastFallReleaseSpeed;
+    private int _numberOfJumpUsed;
+
+    //apex vars
+    private float _apexPoint;
+    private float _timePastApexThreshold;
+    private bool _isPastApexThreshold;
+
+    // jump buffer vars
+    private float _jumpBufferTimer;
+    private float _jumpReleasedDuringBuffer;
+
+    //coyote time vars
+    private float _coyoteTimer;
+
     private void Awake()
     {
         _IsFacingRight = true;
@@ -25,10 +46,16 @@ public class PlayerMovement : MonoBehaviour
         _rb= GetComponent<Rigidbody2D>();
 
     }
+
+    private void Update()
+    {
+            
+    }
+
     private void FixedUpdate()
     {
         CollisionChecks();
-
+        Debug.Log(_isGrounded);
         if (_isGrounded)
         {
             Move(MoveStats.GroundAcceleration, MoveStats.GroundDeceleration, InputManager.Movement);
@@ -95,14 +122,20 @@ public class PlayerMovement : MonoBehaviour
 
     #endregion
 
+    #region Jump
+
+
+
+
+
+
+    #endregion
+
     #region  Collision Checks
     private void IsGrounded()
     {
         Vector2 boxCastOrigin = new Vector2(_feetColl.bounds.center.x, _feetColl.bounds.min.y);
         Vector2 boxCastSize = new Vector2(_feetColl.bounds.size.x, MoveStats.GroundDetectionRayLength);
-
-
-
 
         _groundhit = Physics2D.BoxCast(boxCastOrigin, boxCastSize, 0f, Vector2.down, MoveStats.GroundDetectionRayLength, MoveStats.GroundLayer);
         if (_groundhit.collider != null)
@@ -113,7 +146,7 @@ public class PlayerMovement : MonoBehaviour
         {
             _isGrounded = false;
         }
-        /*
+       
         #region Debug Visualization
         if (MoveStats.DebugShowIsGroundedBox)
         {
@@ -130,16 +163,17 @@ public class PlayerMovement : MonoBehaviour
 
 
         }
-        */
+        
         #endregion
     }
-        private  void CollisionChecks()
+    
+    private void CollisionChecks()
         {
             IsGrounded();        
         }
+    #endregion
 
-
-    }
+}
 
 
 
