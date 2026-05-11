@@ -25,6 +25,19 @@ public class PlayerMovement : MonoBehaviour
         _rb= GetComponent<Rigidbody2D>();
 
     }
+    private void FixedUpdate()
+    {
+        CollisionChecks();
+        if (_isGrounded)
+        {
+            Move(MoveStats.GroundAcceleration, MoveStats.GroundDeceleration, InputManager.Movement);
+        }
+            
+        else
+        {
+            Move(MoveStats.AirAcceleration, MoveStats.AirDeceleration, InputManager.Movement);
+        }
+    }
 
 
 
@@ -80,6 +93,44 @@ public class PlayerMovement : MonoBehaviour
     }
 
     #endregion
+
+    #region  Collision Checks
+    private void IsGrounded()
+    {
+        Vector2 boxCastOrigin = new Vector2 (_feetColl.bounds.center.x,_feetColl.bounds.min.y);
+        Vector2 boxCastSize = new Vector2(_feetColl.bounds.size.x, MoveStats.GroundDetectionRayLength);
+
+
+
+
+        _groundhit = Physics2D.BoxCast(boxCastOrigin, boxCastSize, 0f, Vector2.down, MoveStats.GroundDetectionRayLength, MoveStats.GroundLayer);
+        if (_groundhit.collider != null)
+        {
+            _isGrounded = true;
+        }
+        else 
+        {
+            _isGrounded = false;
+        }
+        #region Debug Visualization
+        if (MoveStats.DebugShowIsGroundedBox)
+        {
+            Color rayColor;
+            if (_isGrounded)
+            {
+                rayColor = Color.green;
+            }
+            else { rayColor = Color.red; }
+
+            Debug.DrawRay(new Vector2(boxCastOrigin.x - boxCastSize.x / 2, boxCastOrigin.y), Vector2.down * MoveStats.GroundDetectionRayLength, rayColor);
+            Debug.DrawRay(new Vector2(boxCastOrigin.x + boxCastSize.x / 2, boxCastOrigin.y), Vector2.down * MoveStats.GroundDetectionRayLength, rayColor);
+            Debug.DrawRay(new Vector2(boxCastOrigin.x - boxCastSize.x / 2, boxCastOrigin.y - MoveStats.GroundDetectionRayLength), Vector2.right * boxCastSize.x, rayColor);
+
+        }
+
+        #endregion
+
+    }
 }
 
 
