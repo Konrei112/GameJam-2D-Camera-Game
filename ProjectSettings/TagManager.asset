@@ -7,6 +7,7 @@ TagManager:
   - Lens1
   - Lens2
   - Lens3
+  - End
   layers:
   - Default
   - TransparentFX
