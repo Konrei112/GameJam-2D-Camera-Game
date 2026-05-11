@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         CollisionChecks();
+
         if (_isGrounded)
         {
             Move(MoveStats.GroundAcceleration, MoveStats.GroundDeceleration, InputManager.Movement);
@@ -97,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
     #region  Collision Checks
     private void IsGrounded()
     {
-        Vector2 boxCastOrigin = new Vector2 (_feetColl.bounds.center.x,_feetColl.bounds.min.y);
+        Vector2 boxCastOrigin = new Vector2(_feetColl.bounds.center.x, _feetColl.bounds.min.y);
         Vector2 boxCastSize = new Vector2(_feetColl.bounds.size.x, MoveStats.GroundDetectionRayLength);
 
 
@@ -108,10 +109,11 @@ public class PlayerMovement : MonoBehaviour
         {
             _isGrounded = true;
         }
-        else 
+        else
         {
             _isGrounded = false;
         }
+        /*
         #region Debug Visualization
         if (MoveStats.DebugShowIsGroundedBox)
         {
@@ -126,12 +128,21 @@ public class PlayerMovement : MonoBehaviour
             Debug.DrawRay(new Vector2(boxCastOrigin.x + boxCastSize.x / 2, boxCastOrigin.y), Vector2.down * MoveStats.GroundDetectionRayLength, rayColor);
             Debug.DrawRay(new Vector2(boxCastOrigin.x - boxCastSize.x / 2, boxCastOrigin.y - MoveStats.GroundDetectionRayLength), Vector2.right * boxCastSize.x, rayColor);
 
+
+        }
+        */
+        #endregion
+    }
+        private  void CollisionChecks()
+        {
+            IsGrounded();        
         }
 
-        #endregion
 
     }
-}
+
+
+
 
 
 
