@@ -13,12 +13,15 @@ public class InputManager : MonoBehaviour
     public static bool RunIsHeld;
 
     public static bool CamWasPressed;
+    public static bool SnapWasPressed;
    
 
     private InputAction _moveAction;
     private InputAction _jumpAction;
     private InputAction _runAction;
+
     private InputAction _camAction;
+    private InputAction _snapAction;
 
 
     private void Awake()
@@ -30,17 +33,19 @@ public class InputManager : MonoBehaviour
         _runAction = PlayerInput.actions["Run"];
         //Adding new input to toggle lens mode
         _camAction = PlayerInput.actions["EnableCam"];
+        _snapAction = PlayerInput.actions["Snap"];
     }
 
     private void Update()
     {
         Movement = _moveAction.ReadValue<Vector2>();
-        CamWasPressed = _camAction.IsPressed();
-
         JumpWasPressed = _jumpAction.WasPressedThisFrame();
         JumpIsHeld = _jumpAction.IsPressed();
         JumpWasReleased = _jumpAction.WasReleasedThisFrame();
-
         RunIsHeld = _runAction.IsPressed();
+        
+
+        CamWasPressed = _camAction.IsPressed();
+        SnapWasPressed = _snapAction.IsPressed();
     }
 }

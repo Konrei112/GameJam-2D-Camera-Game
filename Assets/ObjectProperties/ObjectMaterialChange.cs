@@ -13,4 +13,7 @@ public class ObjectMaterialChange : MonoBehaviour
     {
         
     }
+
+
+    //Use a list of gameobjects to cycle through the lenses and just remoce the corresponding lense
 }
