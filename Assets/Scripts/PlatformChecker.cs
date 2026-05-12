@@ -3,7 +3,12 @@ using UnityEngine;
 public class PlatformChecker : MonoBehaviour
 {
     private SpriteRenderer Sprite;
+    [SerializeField]
+    public GameObject LensObject;
+    [SerializeField]
+    public GameObject platform;
 
+    
 
     public bool lens1 = false;
     public bool lens2 = false;
@@ -18,75 +23,26 @@ public class PlatformChecker : MonoBehaviour
 
     private void Awake()
     {
-        Sprite=GetComponent<SpriteRenderer>();
+        platform.SetActive(false);
+        Sprite=LensObject.GetComponent<SpriteRenderer>();
         Sprite.enabled = false;
         snapped = false;
         visible = false;
+        
     }
-    private void Update()
+    public void platformEnabler()
     {
-        if (InputManager.SnapWasPressed)
-            {
-            Debug.Log("Step1 Snap was Pressed");
-            Snap(); 
-            }
+        Debug.Log("STEP # 2| Enabling Platform");
+        platform.SetActive(true);
     }
 
     //emables item on entry
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        
-        if (collision.CompareTag("Lens1"))
-        {
-            Sprite.enabled = true;
-            Sprite.color = Color.red;
-            lens1 = true;
-
-        }
-        else if (collision.CompareTag("Lens2"))
-        {
-            Sprite.enabled = true;
-            Sprite.color = Color.blue;
-            lens2 = true;
-           
-        }
-        else if (collision.CompareTag("Lens3"))
-        {
-            Sprite.enabled = true;
-            Sprite.color = Color.green;
-            lens3 = true;
-
-           
-        }
-        visible = true;
-    }
-
-
-    //disbales the thing on exit
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (!snapped)
-        {
-            Sprite.enabled=false;
-            visible = false;
-        }
-        
-    }
+   
 
     
-    public void Snap()
-    {
-        Debug.Log("Entering Snapped");
-        if (visible)
-        {
-            snapped= true;
-        }
-    }
+ 
 
-    public void ChangeProperties()
-    {
-        
-    }
+  
 
 
 }
