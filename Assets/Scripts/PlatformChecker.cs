@@ -30,10 +30,13 @@ public class PlatformChecker : MonoBehaviour
         visible = false;
         
     }
-    public void platformEnabler()
+    public void platformEnabler(int lens)
     {
         Debug.Log("STEP # 2| Enabling Platform");
         platform.SetActive(true);
+        PlatformScript PS = platform.GetComponent<PlatformScript>();
+        PS.setProperties(lens);
+
     }
 
     //emables item on entry

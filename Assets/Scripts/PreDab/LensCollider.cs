@@ -22,6 +22,8 @@ public class LensCollider : MonoBehaviour
     public bool visible;
     public bool snapped;
 
+    public int lenss;
+
     private void Awake()
     {
         Sprite = GetComponent<SpriteRenderer>();
@@ -54,14 +56,7 @@ public class LensCollider : MonoBehaviour
             lens2 = true;
 
         }
-        else if (collision.CompareTag("Lens3"))
-        {
-            Sprite.enabled = true;
-            Sprite.color = Color.green;
-            lens3 = true;
-
-
-        }
+        
         visible = true;
     }
 
@@ -74,6 +69,9 @@ public class LensCollider : MonoBehaviour
         {
             Sprite.enabled = false;
             visible = false;
+            lens1 = false; 
+            lens2 = false; 
+            lens3 = false; 
         }
 
     }
@@ -91,6 +89,10 @@ public class LensCollider : MonoBehaviour
     {
         Debug.Log("STEP # 1| Enabling Platform");
         PlatformChecker pc= GetComponentInParent<PlatformChecker>();
-        pc.platformEnabler();
+       
+        if (lens1) lenss = 1;
+        else if(lens2) lenss = 2;
+        
+            pc.platformEnabler(lenss);
     }
 }
