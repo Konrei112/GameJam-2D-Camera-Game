@@ -3,13 +3,13 @@ using UnityEngine;
 public class PlatformScript : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private PlayerMovement pm;
 
-    private bool bouncy, slippery;
-
-    [SerializeField]
-    public int bouncyMax;
-    public int slipperyMax;
+    private bool bouncing,slipping;
+    void Start()
+    {
         
+    }
 
     // Update is called once per frame
     void Update()
@@ -19,31 +19,35 @@ public class PlatformScript : MonoBehaviour
 
     public void setProperties(int lens)
     {
-        Debug.Log("Whats Lens  " + lens);
+        Debug.Log("LENS NUMBER " + lens);
         
             if (lens == 1)
-            { setBouncy(); }
+            {
+                Debug.Log("STEP 1000: Turning Bouncy");
+               bouncing = true;
+                slipping = false;
+            }
 
             else if (lens == 2)
             {
-                setSlippery();
+                Debug.Log("STEP 2000: TURNING   Slippery");
+                bouncing =false;
+                slipping = true;
             }
         
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Entering Collision");
-        rb = collision.gameObject.GetComponent<Rigidbody2D>();
-        if (bouncy)
+        rb= collision.gameObject.GetComponent<Rigidbody2D>();
+        pm= collision.gameObject.GetComponent<PlayerMovement>();
+        if (bouncing)
         {
-            Debug.Log("Step # 50 Bouncing");
-            Vector2 impulse = Vector2.up * 20;
-            rb.AddForce(impulse, ForceMode2D.Impulse);
+            setBouncy(rb);
         }
-        else if (slippery)
+        else if (slipping)
         {
-            
+            setSlippery(rb);
         }
 
     }
@@ -54,29 +58,19 @@ public class PlatformScript : MonoBehaviour
 
 
 
-    private void setBouncy()
+    private void setBouncy(Rigidbody2D rb)
     {
-        Debug.Log("Set Bouncy");
-        bouncy = true;
-        /*
+        
         Debug.Log("SetBouncy");
-        Vector2 impulse = Vector2.up * 10;
-        rb.AddForce(impulse, ForceMode2D.Impulse);
-        */
+        
+        pm.JumpPad();
     }
-    private void setSlippery()
+    private void setSlippery(Rigidbody2D rb)
     {
         Debug.Log("SetSlippery");
-        slippery = true;
         //might need to edit the movestats ground decellerations
 
 
 
-    }
-
-    private void removeAll()
-    {
-        bouncy = false;
-        slippery = false;
     }
 }

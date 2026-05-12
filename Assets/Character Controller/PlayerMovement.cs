@@ -22,10 +22,10 @@ public class PlayerMovement : MonoBehaviour
 
     //jump vars
     public float VerticalVelocity { get; private set; }
-    private bool _isJumping;
-    private bool _isFastFalling;
-    private bool _isFalling;
-    private float _fastFallTime;
+    public bool _isJumping;
+    public bool _isFastFalling;
+    public bool _isFalling;
+    public  float _fastFallTime;
     private float _fastFallReleaseSpeed;
     private int _numberOfJumpUsed;
 
@@ -130,7 +130,17 @@ public class PlayerMovement : MonoBehaviour
 
     #region Jump
 
+    public void JumpPad()
+    {
+        _isJumping = true;
+        _isFalling = false;
+        _isFastFalling = false;
+        _jumpBufferTimer = 0f; 
 
+       
+
+            VerticalVelocity = MoveStats.InitialJumpVelocity;
+     }
     private void JumpCheck()
     {
         if (InputManager.JumpWasPressed)

@@ -90,9 +90,11 @@ public class LensCollider : MonoBehaviour
         Debug.Log("STEP # 1| Enabling Platform");
         PlatformChecker pc= GetComponentInParent<PlatformChecker>();
        
-        if (lens1) lenss = 1;
-        else if(lens2) lenss = 2;
+        if (lens1)
+            lenss = 1;
+        else if(lens2) 
+            lenss = 2;
         
-            pc.platformEnabler(lenss);
+        pc.platformEnabler(lenss);
     }
 }
