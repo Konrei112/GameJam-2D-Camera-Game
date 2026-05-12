@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Drag : MonoBehaviour
 {
-    [SerializeField] private bool isDragging = false;
+    [SerializeField] public bool isDragging = false;
     public Animator animator;
 
     public void Start()
@@ -10,7 +10,7 @@ public class Drag : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void Update()
+    protected virtual void Update()
     {
         if (isDragging)
         {
