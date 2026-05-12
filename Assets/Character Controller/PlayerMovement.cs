@@ -41,6 +41,8 @@ public class PlayerMovement : MonoBehaviour
     //coyote time vars
     private float _coyoteTimer;
 
+    public Animator animator;
+
     private void Awake()
     {
         _IsFacingRight = true;
@@ -70,6 +72,10 @@ public class PlayerMovement : MonoBehaviour
         {
             Move(MoveStats.AirAcceleration, MoveStats.AirDeceleration, InputManager.Movement);
         }
+
+
+        animator.SetFloat("Speed", Mathf.Abs(_rb.linearVelocity.x));
+        animator.SetFloat("VSpeed", _rb.linearVelocityY);
     }
 
 
