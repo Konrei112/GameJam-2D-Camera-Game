@@ -8,6 +8,7 @@ TagManager:
   - Lens2
   - Lens3
   - End
+  - Exit
   layers:
   - Default
   - TransparentFX
