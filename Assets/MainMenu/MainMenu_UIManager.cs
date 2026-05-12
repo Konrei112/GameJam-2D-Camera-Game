@@ -1,20 +1,27 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu_UIManager : MonoBehaviour
 {
     public GameObject settingsPanel;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Header("Next Scene")] // Handles the Scene Transition
+    public SceneFader scenefader;
+    public string nextScene;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+    }
+    public void StartGame()
+    {
+        LoadNextScene();
     }
 
     public void OpenSettings()
@@ -25,5 +32,17 @@ public class MainMenu_UIManager : MonoBehaviour
     public void CloseSettings()
     {
         settingsPanel.SetActive(false);
+    }
+
+    public void LoadNextScene()
+    {
+        if (scenefader != null)
+        {
+            scenefader.FadeToScene(nextScene);
+        }
+        else
+        {
+            SceneManager.LoadScene(nextScene);
+        }
     }
 }

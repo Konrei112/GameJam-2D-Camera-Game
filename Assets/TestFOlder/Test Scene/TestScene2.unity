@@ -2008,6 +2008,7 @@ MonoBehaviour:
   _isFastFalling: 0
   _isFalling: 0
   _fastFallTime: 0
+  animator: {fileID: 1827949229}
 --- !u!1 &1165320296
 GameObject:
   m_ObjectHideFlags: 0
