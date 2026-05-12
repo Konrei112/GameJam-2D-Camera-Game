@@ -9,6 +9,7 @@ TagManager:
   - Lens3
   - End
   - Exit
+  - PlayerMain
   layers:
   - Default
   - TransparentFX
