@@ -47,5 +47,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Past
+    uniqueID: 3789185551
+    locked: 0
+  - name: Future
+    uniqueID: 2606718159
+    locked: 0
+  - name: Present
+    uniqueID: 43546207
+    locked: 0
+  - name: Active Objects
+    uniqueID: 812190109
+    locked: 0
   m_RenderingLayers:
   - Default

@@ -9,10 +9,13 @@ public class PlatformScript : MonoBehaviour
 
     public float originalDecelleration;
     public float originalAcceleration;
+
+    [SerializeField]
+    public float changing_velocity;
     void Start()
     {
 
-        
+       
     }
 
     // Update is called once per frame
@@ -76,7 +79,7 @@ public class PlatformScript : MonoBehaviour
         
         Debug.Log("SetBouncy");
         
-        pm.JumpPad();
+        pm.JumpPad(changing_velocity);
     }
     private void setSlippery(Rigidbody2D rb)
     {

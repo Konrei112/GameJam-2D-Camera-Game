@@ -5,15 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
-    path: Assets/Scenes/CharacterScenes.unity
-    guid: 1815d3b8f292af344ba2ae10e524df91
   - enabled: 1
-    path: Assets/Scenes/CharacterScenes 1.unity
-    guid: ea6a7d384d76117499f9acccc603d9e3
+    path: Assets/Scenes/ActiveLevels/Lab/Real Base Level.unity
+    guid: 0154505104aa0ed47b44f10bf2a34810
+  - enabled: 1
+    path: Assets/Scenes/ActiveLevels/Lab/Lab_Scene_1.unity
+    guid: f05a495e6a935394886911c51c4cba45
+  - enabled: 1
+    path: Assets/Scenes/ActiveLevels/Forest/Forest_Scene_1.unity
+    guid: 54f146c73dc70d248b8ded0912ae72e3
+  - enabled: 1
+    path: Assets/Scenes/ActiveLevels/Forest/Forest_Scene_2.unity
+    guid: 30c107109b8020345bf98f2b945acf07
+  - enabled: 1
+    path: Assets/Scenes/ActiveLevels/Valley/Valley_Scene_2.unity
+    guid: 88dbfa7b62a624f469b11bbc3253445d
+  - enabled: 1
+    path: Assets/Scenes/ActiveLevels/Valley/Valley_Scene_1.unity
+    guid: 0b7a828a3cfa7234081e24701ab5a187
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 549ac99d4f5a6724c9c667838cdab198, type: 3}
   m_UseUCBPForAssetBundles: 0

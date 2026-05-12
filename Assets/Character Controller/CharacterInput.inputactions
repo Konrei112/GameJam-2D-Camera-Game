@@ -134,7 +134,7 @@
                     "name": "",
                     "id": "306a8369-5950-4ff5-8061-6cdf38b0c6a1",
                     "path": "<Keyboard>/f",
-                    "interactions": "Tap",
+                    "interactions": "Tap(duration=0.5)",
                     "processors": "",
                     "groups": "",
                     "action": "EnableCam",

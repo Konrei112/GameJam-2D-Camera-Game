@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: 30292de5361a9a24bb4b3fa78b20528d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4743868398612750125
+    second: BeachFuture5_0
+  - first:
+      213: -6024102369175565802
+    second: BeachFuture5_1
+  - first:
+      213: -125797765532512823
+    second: BeachFuture5_2
+  - first:
+      213: -4153647148305780655
+    second: BeachFuture5_3
+  - first:
+      213: -2251159182516984205
+    second: BeachFuture5_4
+  - first:
+      213: 7145717648946232198
+    second: BeachFuture5_5
+  - first:
+      213: 3058570213016920697
+    second: BeachFuture5_6
+  - first:
+      213: -3920244582036634541
+    second: BeachFuture5_7
+  - first:
+      213: -6314892661046931427
+    second: BeachFuture5_8
+  - first:
+      213: -1470724722789707129
+    second: BeachFuture5_9
+  - first:
+      213: 2804869090739524952
+    second: BeachFuture5_10
+  - first:
+      213: -6139921684173858534
+    second: BeachFuture5_11
+  - first:
+      213: 971704158103064481
+    second: BeachFuture5_12
+  - first:
+      213: 5388871510847030417
+    second: BeachFuture5_13
+  - first:
+      213: -1087689303687408306
+    second: BeachFuture5_14
+  - first:
+      213: 5900458173456280116
+    second: BeachFuture5_15
+  - first:
+      213: 9218254996896394419
+    second: BeachFuture5_16
+  - first:
+      213: -6039070125979368058
+    second: BeachFuture5_17
+  - first:
+      213: 115233135955985250
+    second: BeachFuture5_18
+  - first:
+      213: -5770932121653558104
+    second: BeachFuture5_19
+  - first:
+      213: 6225128723064534906
+    second: BeachFuture5_20
+  - first:
+      213: 3287477721954630153
+    second: BeachFuture5_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BeachFuture5_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 196
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f9388ac2b95d140800000000000000
+      internalID: 4743868398612750125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_1
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 195
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a83b2ffc6166ca0800000000000000
+      internalID: -6024102369175565802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_2
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 195
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd85e74993114ef0800000000000000
+      internalID: -125797765532512823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_3
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 193
+        width: 37
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1507be2fce74b56c0800000000000000
+      internalID: -4153647148305780655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_4
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 194
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376673196a642c0e0800000000000000
+      internalID: -2251159182516984205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_5
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 173
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68bfda29750ba2360800000000000000
+      internalID: 7145717648946232198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_6
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 166
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972e67b5769327a20800000000000000
+      internalID: 3058570213016920697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_7
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 169
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3548e0fa25e7899c0800000000000000
+      internalID: -3920244582036634541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_8
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 172
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10939f159efc58a0800000000000000
+      internalID: -6314892661046931427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_9
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 165
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7821cb728afe69be0800000000000000
+      internalID: -1470724722789707129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_10
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 168
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8559003c395ece620800000000000000
+      internalID: 2804869090739524952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_11
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 172
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19591a42cd9acaa0800000000000000
+      internalID: -6139921684173858534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_12
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 165
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afc08298cf2c7d00800000000000000
+      internalID: 971704158103064481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_13
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 168
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1948240761e19ca40800000000000000
+      internalID: 5388871510847030417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_14
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 171
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4558b35750c7e0f0800000000000000
+      internalID: -1087689303687408306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_15
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 164
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a69e06273a2e150800000000000000
+      internalID: 5900458173456280116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_16
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 159
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bcaafa4412ddef70800000000000000
+      internalID: 9218254996896394419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_17
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 163
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 685835f77b9e03ca0800000000000000
+      internalID: -6039070125979368058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_18
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 158
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 263c2073de3699100800000000000000
+      internalID: 115233135955985250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_19
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 163
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4c2f1afc789efa0800000000000000
+      internalID: -5770932121653558104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_20
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 158
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77b75b6799146650800000000000000
+      internalID: 6225128723064534906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeachFuture5_21
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 162
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90abd1002977f9d20800000000000000
+      internalID: 3287477721954630153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BeachFuture5_0: 4743868398612750125
+      BeachFuture5_1: -6024102369175565802
+      BeachFuture5_10: 2804869090739524952
+      BeachFuture5_11: -6139921684173858534
+      BeachFuture5_12: 971704158103064481
+      BeachFuture5_13: 5388871510847030417
+      BeachFuture5_14: -1087689303687408306
+      BeachFuture5_15: 5900458173456280116
+      BeachFuture5_16: 9218254996896394419
+      BeachFuture5_17: -6039070125979368058
+      BeachFuture5_18: 115233135955985250
+      BeachFuture5_19: -5770932121653558104
+      BeachFuture5_2: -125797765532512823
+      BeachFuture5_20: 6225128723064534906
+      BeachFuture5_21: 3287477721954630153
+      BeachFuture5_3: -4153647148305780655
+      BeachFuture5_4: -2251159182516984205
+      BeachFuture5_5: 7145717648946232198
+      BeachFuture5_6: 3058570213016920697
+      BeachFuture5_7: -3920244582036634541
+      BeachFuture5_8: -6314892661046931427
+      BeachFuture5_9: -1470724722789707129
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

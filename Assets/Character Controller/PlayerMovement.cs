@@ -139,7 +139,7 @@ public class PlayerMovement : MonoBehaviour
 
     #region Jump
 
-    public void JumpPad()
+    public void JumpPad(float jumpvel)
     {
         _isJumping = true;
         _isFalling = false;
@@ -148,7 +148,7 @@ public class PlayerMovement : MonoBehaviour
 
        
 
-            VerticalVelocity = MoveStats.InitialJumpVelocity;
+        VerticalVelocity = jumpvel;
      }
     private void JumpCheck()
     {
