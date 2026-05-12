@@ -7,6 +7,7 @@ public class PlatformChecker : MonoBehaviour
     public GameObject LensObject;
     [SerializeField]
     public GameObject platform;
+    private ParticleSystem particles;
 
     
 
@@ -25,6 +26,7 @@ public class PlatformChecker : MonoBehaviour
     {
         platform.SetActive(false);
         Sprite=LensObject.GetComponent<SpriteRenderer>();
+        particles =GetComponent<ParticleSystem>();
         Sprite.enabled = false;
         snapped = false;
         visible = false;
@@ -33,6 +35,7 @@ public class PlatformChecker : MonoBehaviour
     public void platformEnabler(int lens)
     {
         Debug.Log("STEP # 2| Enabling Platform");
+        particles.Stop();
         platform.SetActive(true);
         PlatformScript PS = platform.GetComponent<PlatformScript>();
         PS.setProperties(lens);

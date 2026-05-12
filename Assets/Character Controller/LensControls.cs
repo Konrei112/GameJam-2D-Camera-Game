@@ -11,8 +11,8 @@ public class LensControls : MonoBehaviour
     {
         LensToggle = 0;
         Lens.SetActive(false);
-        PlayerMov=GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        playerRB=GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+        PlayerMov=GameObject.FindGameObjectWithTag("PlayerMain").GetComponent<PlayerMovement>();
+        playerRB=GameObject.FindGameObjectWithTag("PlayerMain").GetComponent<Rigidbody2D>();
         IsPressed = false;
     }
 

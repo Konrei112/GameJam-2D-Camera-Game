@@ -48,6 +48,8 @@ public class PlayerMovement : MonoBehaviour
         _IsFacingRight = true;
 
         _rb= GetComponent<Rigidbody2D>();
+        MoveStats.GroundDeceleration = 20;
+        MoveStats.GroundAcceleration = 5;
 
     }
 
@@ -72,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Move(MoveStats.AirAcceleration, MoveStats.AirDeceleration, InputManager.Movement);
         }
+        
 
 
         animator.SetFloat("Speed", Mathf.Abs(_rb.linearVelocity.x));

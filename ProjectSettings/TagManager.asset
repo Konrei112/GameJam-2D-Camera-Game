@@ -8,6 +8,7 @@ TagManager:
   - Lens2
   - Lens3
   - End
+  - PlayerMain
   layers:
   - Default
   - TransparentFX
