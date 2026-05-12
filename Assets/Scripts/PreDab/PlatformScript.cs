@@ -8,6 +8,7 @@ public class PlatformScript : MonoBehaviour
     private bool bouncing,slipping;
 
     public float originalDecelleration;
+    public float originalAcceleration;
     void Start()
     {
 
@@ -17,7 +18,8 @@ public class PlatformScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(pm!=null)
+        Debug.Log("Decelleration Speed"+ pm.MoveStats.GroundDeceleration);
     }
 
     public void setProperties(int lens)
@@ -51,19 +53,22 @@ public class PlatformScript : MonoBehaviour
         else if (slipping)
         {
             setSlippery(rb);
-        }
+        }   
 
     }
-    private void OnCollisionExit(Collision collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (slipping)
         {
             {
-                pm.MoveStats.GroundDeceleration = originalDecelleration;
+                pm.MoveStats.GroundDeceleration = 20;
+                pm.MoveStats.GroundAcceleration = 5;
             }
         }
     }
-
+   
+   
+    
 
 
     private void setBouncy(Rigidbody2D rb)
@@ -78,8 +83,9 @@ public class PlatformScript : MonoBehaviour
         Debug.Log("SetSlippery");
         //might need to edit the movestats ground decellerations
         setDecell();
-        
+        //Setting it to become slirppery
         pm.MoveStats.GroundDeceleration = 1;
+        pm.MoveStats.GroundAcceleration= 10;
 
 
     }

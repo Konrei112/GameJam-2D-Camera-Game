@@ -41,11 +41,15 @@ public class PlayerMovement : MonoBehaviour
     //coyote time vars
     private float _coyoteTimer;
 
+    public Animator animator;
+
     private void Awake()
     {
         _IsFacingRight = true;
 
         _rb= GetComponent<Rigidbody2D>();
+        MoveStats.GroundDeceleration = 20;
+        MoveStats.GroundAcceleration = 5;
 
     }
 
@@ -70,6 +74,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Move(MoveStats.AirAcceleration, MoveStats.AirDeceleration, InputManager.Movement);
         }
+        
+
+
+        animator.SetFloat("Speed", Mathf.Abs(_rb.linearVelocity.x));
+        animator.SetFloat("VSpeed", _rb.linearVelocityY);
     }
 
 
@@ -102,13 +111,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void TurnCheck(Vector2 moveInput)
     {
-        if (_IsFacingRight && moveInput.x > 0)
-        {
-            Turn(true);
-        }
-        else if (_IsFacingRight && moveInput.x < 0)
+        if (_IsFacingRight && moveInput.x < 0)
         {
             Turn(false);
+        }
+        else if (!_IsFacingRight && moveInput.x > 0)
+        {
+            Turn(true);
         }
     }
 
