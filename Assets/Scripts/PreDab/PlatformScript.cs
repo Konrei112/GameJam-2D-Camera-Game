@@ -4,10 +4,13 @@ public class PlatformScript : MonoBehaviour
 {
     private Rigidbody2D rb;
     private PlayerMovement pm;
-
+    public float original;
     private bool bouncing,slipping;
+
+    public float originalDecelleration;
     void Start()
     {
+
         
     }
 
@@ -40,7 +43,7 @@ public class PlatformScript : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         rb= collision.gameObject.GetComponent<Rigidbody2D>();
-        pm= collision.gameObject.GetComponent<PlayerMovement>();
+        pm = collision.gameObject.GetComponent<PlayerMovement>();
         if (bouncing)
         {
             setBouncy(rb);
@@ -53,7 +56,12 @@ public class PlatformScript : MonoBehaviour
     }
     private void OnCollisionExit(Collision collision)
     {
-        
+        if (slipping)
+        {
+            {
+                pm.MoveStats.GroundDeceleration = originalDecelleration;
+            }
+        }
     }
 
 
@@ -69,8 +77,14 @@ public class PlatformScript : MonoBehaviour
     {
         Debug.Log("SetSlippery");
         //might need to edit the movestats ground decellerations
+        setDecell();
+        
+        pm.MoveStats.GroundDeceleration = 1;
 
 
-
+    }
+    private void setDecell()
+    {
+        originalDecelleration = pm.MoveStats.GroundDeceleration;
     }
 }
