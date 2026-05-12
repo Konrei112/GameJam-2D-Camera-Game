@@ -102,13 +102,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void TurnCheck(Vector2 moveInput)
     {
-        if (_IsFacingRight && moveInput.x > 0)
-        {
-            Turn(true);
-        }
-        else if (_IsFacingRight && moveInput.x < 0)
+        if (_IsFacingRight && moveInput.x < 0)
         {
             Turn(false);
+        }
+        else if (!_IsFacingRight && moveInput.x > 0)
+        {
+            Turn(true);
         }
     }
 
