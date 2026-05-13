@@ -24,6 +24,12 @@ public class MainMenu_UIManager : MonoBehaviour
         LoadNextScene();
     }
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
+
     public void OpenSettings()
     {
         settingsPanel.SetActive(true);
