@@ -6,6 +6,7 @@ public class LensCollider : MonoBehaviour
 
     [SerializeField]
     private SpriteRenderer Sprite;
+    public GameObject presentObject;
     
   
 
@@ -47,6 +48,7 @@ public class LensCollider : MonoBehaviour
             Sprite.enabled = true;
             Sprite.color = Color.red;
             lens1 = true;
+            presentObject.SetActive(false);
 
         }
         else if (collision.CompareTag("Lens2"))
@@ -54,9 +56,8 @@ public class LensCollider : MonoBehaviour
             Sprite.enabled = true;
             Sprite.color = Color.blue;
             lens2 = true;
-
+            presentObject.SetActive(false);
         }
-        
         visible = true;
     }
 
@@ -71,7 +72,8 @@ public class LensCollider : MonoBehaviour
             visible = false;
             lens1 = false; 
             lens2 = false; 
-            lens3 = false; 
+            lens3 = false;
+            presentObject.SetActive(true);
         }
 
     }

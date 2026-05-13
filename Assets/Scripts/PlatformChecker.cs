@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlatformChecker : MonoBehaviour
 {
     private SpriteRenderer Sprite;
+    public GameObject presentObject;
     [SerializeField]
     public GameObject LensObject;
     [SerializeField]
@@ -37,6 +38,7 @@ public class PlatformChecker : MonoBehaviour
         Debug.Log("STEP # 2| Enabling Platform");
         particles.Stop();
         platform.SetActive(true);
+        presentObject.SetActive(false);
         PlatformScript PS = platform.GetComponent<PlatformScript>();
         PS.setProperties(lens);
 
