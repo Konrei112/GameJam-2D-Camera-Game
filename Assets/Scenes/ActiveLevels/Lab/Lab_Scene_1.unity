@@ -1028,6 +1028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 487967962}
   - component: {fileID: 487967963}
+  - component: {fileID: 487967964}
   m_Layer: 0
   m_Name: SceneFader
   m_TagString: Untagged
@@ -1062,6 +1063,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 322002660a45cda41a6aac64c7c23b39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneFader
+  fadeImageObject: {fileID: 891717143}
+  fadeImage: {fileID: 891717144}
+  fadeDuration: 1
+--- !u!114 &487967964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487967961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1b46e965e9df7459d1db41233e9615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KillFader
   fadeImageObject: {fileID: 891717143}
   fadeImage: {fileID: 891717144}
   fadeDuration: 1
@@ -1210,6 +1226,10 @@ PrefabInstance:
     - target: {fileID: 1612285863618137016, guid: 9a886934aca095a47bd0376710569615, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000588484151965235, guid: 9a886934aca095a47bd0376710569615, type: 3}
+      propertyPath: scenefader
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6678259272269563536, guid: 9a886934aca095a47bd0376710569615, type: 3}
       propertyPath: lens1

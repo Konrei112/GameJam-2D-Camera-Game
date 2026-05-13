@@ -6,6 +6,7 @@ public class PlatformScript : MonoBehaviour
     private PlayerMovement pm;
     public float original;
     private bool bouncing,slipping;
+    public KillingScene Killers;
 
     public float originalDecelleration;
     public float originalAcceleration;
@@ -15,7 +16,7 @@ public class PlatformScript : MonoBehaviour
     void Start()
     {
 
-       
+       Killers.enabled = false;
     }
 
     // Update is called once per frame
@@ -56,7 +57,11 @@ public class PlatformScript : MonoBehaviour
         else if (slipping)
         {
             setSlippery(rb);
-        }   
+        }
+        else
+        {
+            Killers.enabled = true;
+        }
 
     }
     private void OnCollisionExit2D(Collision2D collision)
@@ -80,6 +85,7 @@ public class PlatformScript : MonoBehaviour
         Debug.Log("SetBouncy");
         
         pm.JumpPad(changing_velocity);
+        Killers.enabled = false;
     }
     private void setSlippery(Rigidbody2D rb)
     {
@@ -89,11 +95,13 @@ public class PlatformScript : MonoBehaviour
         //Setting it to become slirppery
         pm.MoveStats.GroundDeceleration = 1;
         pm.MoveStats.GroundAcceleration= 10;
-
+        Killers.enabled = false;
 
     }
     private void setDecell()
     {
         originalDecelleration = pm.MoveStats.GroundDeceleration;
     }
+
+    
 }
