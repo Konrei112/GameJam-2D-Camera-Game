@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/ActiveLevels/Lab/Real Base Level.unity
-    guid: 0154505104aa0ed47b44f10bf2a34810
   - enabled: 1
     path: Assets/Scenes/ActiveLevels/Main Menu.unity
     guid: 5fc696c8cb8cf2f4782e08809d39b760
