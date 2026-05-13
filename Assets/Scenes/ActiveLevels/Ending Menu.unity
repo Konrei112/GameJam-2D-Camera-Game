@@ -412,7 +412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu_UIManager
   settingsPanel: {fileID: 1661828586}
   scenefader: {fileID: 1288785450}
-  nextScene: Lab_Scene_1
+  nextScene: Main Menu
 --- !u!4 &136923636
 Transform:
   m_ObjectHideFlags: 0
@@ -3765,11 +3765,11 @@ GameObject:
   - component: {fileID: 1443052534}
   m_Layer: 5
   m_Name: FadeImage
-  m_TagString: Untagged
+  m_TagString: FadeImage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1443052534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4197,7 +4197,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: e7b6c9c05f065454eb21045f56dfe499, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: f7f0b8d509799bb4e8b06c589414023d, type: 3}
+  m_Resource: {fileID: 8300000, guid: e5e7073e12afa9e4996606c4581f27cd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5099,6 +5099,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2183421279339159187, guid: fc345d54bb60eb44894e23de61bdc724, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: e5e7073e12afa9e4996606c4581f27cd, type: 3}
     - target: {fileID: 6690829313040845473, guid: fc345d54bb60eb44894e23de61bdc724, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.00409

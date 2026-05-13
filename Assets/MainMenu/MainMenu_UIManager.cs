@@ -26,7 +26,14 @@ public class MainMenu_UIManager : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("Main Menu");
+        if (scenefader != null)
+        {
+            scenefader.FadeToScene("Main Menu");
+        }
+        else
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
     }
 
 
