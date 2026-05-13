@@ -10,7 +10,11 @@ public class KillFader : MonoBehaviour
     public Image fadeImage;
 
     public float fadeDuration = 1f;
-
+    private void Awake()
+    {
+        fadeImageObject = GameObject.FindGameObjectWithTag("FadeImage");
+        fadeImage = fadeImageObject.GetComponent<Image>();
+    }
     void Start()
     {
         fadeImageObject.SetActive(true);

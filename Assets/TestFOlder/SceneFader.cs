@@ -11,6 +11,12 @@ public class SceneFader : MonoBehaviour
 
     public float fadeDuration = 1f;
 
+    private void Awake()
+    {
+        fadeImageObject = GameObject.FindGameObjectWithTag("FadeImage");
+        fadeImage = fadeImageObject.GetComponent<Image>();
+    }
+
     void Start()
     {
         fadeImageObject.SetActive(true);
