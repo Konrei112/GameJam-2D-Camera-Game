@@ -10,7 +10,7 @@ public class KillingScene : MonoBehaviour
     public string nextScene;
     public void Awake()
     {
-        
+                    
         scenefader = FindFirstObjectByType<SceneFader>();
     }
     void ReloadNextScene()

@@ -309,6 +309,7 @@ MonoBehaviour:
   Sprite: {fileID: 3061494495519976664}
   presentObject: {fileID: 1744208112939429191}
   spriteTwo: {fileID: -4851714541908708601, guid: 646e026c2c8f25b4da281734b16effeb, type: 3}
+  spriteOne: {fileID: -1235449447823952885, guid: fc7869e28bd1c6941b43f98d04bf981e, type: 3}
   lens1: 0
   lens2: 0
   lens3: 0
