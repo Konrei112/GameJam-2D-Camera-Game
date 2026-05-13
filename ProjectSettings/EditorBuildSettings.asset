@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ActiveLevels/Lab/Real Base Level.unity
     guid: 0154505104aa0ed47b44f10bf2a34810
+  - enabled: 1
+    path: Assets/Scenes/ActiveLevels/Main Menu.unity
+    guid: 5fc696c8cb8cf2f4782e08809d39b760
   - enabled: 1
     path: Assets/Scenes/ActiveLevels/Lab/Lab_Scene_1.unity
     guid: f05a495e6a935394886911c51c4cba45
@@ -18,11 +21,23 @@ EditorBuildSettings:
     path: Assets/Scenes/ActiveLevels/Forest/Forest_Scene_2.unity
     guid: 30c107109b8020345bf98f2b945acf07
   - enabled: 1
+    path: Assets/Scenes/ActiveLevels/Valley/Valley_Scene_1.unity
+    guid: 0b7a828a3cfa7234081e24701ab5a187
+  - enabled: 1
     path: Assets/Scenes/ActiveLevels/Valley/Valley_Scene_2.unity
     guid: 88dbfa7b62a624f469b11bbc3253445d
   - enabled: 1
-    path: Assets/Scenes/ActiveLevels/Valley/Valley_Scene_1.unity
-    guid: 0b7a828a3cfa7234081e24701ab5a187
+    path: Assets/Scenes/ActiveLevels/Valley/Valley_Scene_3.unity
+    guid: f5aa78e6ebc2f2b4d8fbab8785f70f16
+  - enabled: 1
+    path: Assets/Scenes/ActiveLevels/Sea/Sea_Scene_1.unity
+    guid: 99316f91c61f0fd4ea4a350e5a5e1700
+  - enabled: 1
+    path: Assets/Scenes/ActiveLevels/Sea/Sea_Scene_2.unity
+    guid: 0f13cb802c7c47448b3ccbce8e8a15c2
+  - enabled: 1
+    path: Assets/Scenes/ActiveLevels/Sea/Sea_Scene_3.unity
+    guid: 5a81953585cdd034d91f92d207eac0e7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 549ac99d4f5a6724c9c667838cdab198, type: 3}
   m_UseUCBPForAssetBundles: 0
