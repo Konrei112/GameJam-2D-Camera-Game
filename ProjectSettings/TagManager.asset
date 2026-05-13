@@ -10,6 +10,7 @@ TagManager:
   - End
   - Exit
   - PlayerMain
+  - FadeImage
   layers:
   - Default
   - TransparentFX

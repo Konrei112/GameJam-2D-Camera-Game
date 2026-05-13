@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformScript
   original: 0
+  Killers: {fileID: 0}
   originalDecelleration: 0
   originalAcceleration: 0
   changing_velocity: 0
@@ -196,6 +197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3301340066329617592}
   - component: {fileID: 947251243555470550}
+  - component: {fileID: 4000588484151965235}
   - component: {fileID: 1859195878097613359}
   - component: {fileID: 6141988511404607824}
   m_Layer: 0
@@ -279,6 +281,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &4000588484151965235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4997613055506930882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47f3b21d7c01024880723e3b0b2d32f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KillingScene
+  scenefader: {fileID: 0}
+  nextScene: 
 --- !u!114 &1859195878097613359
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,20 +3,18 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class SceneFader : MonoBehaviour
+public class KillFader : MonoBehaviour
 {
     [Header("Image")]
     public GameObject fadeImageObject;
     public Image fadeImage;
 
     public float fadeDuration = 1f;
-
     private void Awake()
     {
         fadeImageObject = GameObject.FindGameObjectWithTag("FadeImage");
         fadeImage = fadeImageObject.GetComponent<Image>();
     }
-
     void Start()
     {
         fadeImageObject.SetActive(true);
@@ -49,7 +47,7 @@ public class SceneFader : MonoBehaviour
             yield return null;
         }
         SetAlpha(1);
-        SceneManager.LoadScene(nextScene);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     void SetAlpha(float alpha)
     {
