@@ -4,14 +4,14 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 public class KillingScene : MonoBehaviour
 {
-    public KillFader scenefader;
+    public SceneFader scenefader;
 
     [Header("Next Scene")]
     public string nextScene;
     public void Awake()
     {
         
-        scenefader = FindFirstObjectByType<KillFader>();
+        scenefader = FindFirstObjectByType<SceneFader>();
     }
     void ReloadNextScene()
     {

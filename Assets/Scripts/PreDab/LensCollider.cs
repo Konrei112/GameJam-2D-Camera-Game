@@ -7,7 +7,7 @@ public class LensCollider : MonoBehaviour
     [SerializeField]
     private SpriteRenderer Sprite;
     public GameObject presentObject;
-    
+    public Sprite spriteTwo;
   
 
 
@@ -54,7 +54,7 @@ public class LensCollider : MonoBehaviour
         else if (collision.CompareTag("Lens2"))
         {
             Sprite.enabled = true;
-            Sprite.color = Color.blue;
+            Sprite.sprite = spriteTwo;
             lens2 = true;
             presentObject.SetActive(false);
         }
