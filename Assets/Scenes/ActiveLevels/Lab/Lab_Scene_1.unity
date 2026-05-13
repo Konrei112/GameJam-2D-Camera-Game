@@ -590,7 +590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1612285863618137016, guid: 9a886934aca095a47bd0376710569615, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.49
+      value: -19.73
       objectReference: {fileID: 0}
     - target: {fileID: 1612285863618137016, guid: 9a886934aca095a47bd0376710569615, type: 3}
       propertyPath: m_LocalPosition.y
@@ -710,7 +710,7 @@ PrefabInstance:
       objectReference: {fileID: 1662093521}
     - target: {fileID: 6747366125707543472, guid: 9a886934aca095a47bd0376710569615, type: 3}
       propertyPath: changing_velocity
-      value: 20
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 7280923733926808251, guid: 9a886934aca095a47bd0376710569615, type: 3}
       propertyPath: m_Name
@@ -4513,7 +4513,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.34, y: 0.33}
+  m_Size: {x: 0.64, y: 0.45}
   m_EdgeRadius: 0
 --- !u!212 &1697867061
 SpriteRenderer:
